@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/login2.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <script src="js/navbar.js"></script>
+  <script src="js/form.js"></script>
+  <div id="login-container">
+    <h1>Registrar</h1>
+    <form action="">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
+      <label for="sobrenome">sobrenome</label>
+      <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" autocomplete="off" required>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Digite um e-email" autocomplete="off" required>
+      <label for="password">Senha</label>
+      <input type="password" name="password" id="senha" placeholder="Crie uma senha" autocomplete="off" required onchange="confirmSenha();">
+      <label for="confirm">Confirmar</label>
+      <input type="password" name="confirm" id="senha" placeholder="Confirme sua senha" autocomplete="off" required onchange="confirmSenha();">
+      <input type="submit" value="Login">
+    </form>
+    <div id="social-container">
+      <p>Ou entre pelas suas redes sociais</p>
+      <i class="fa fa-facebook-f"></i>
+      <i class="fa fa-google"></i>
+      <i class="fa fa-apple"></i>
+    </div>
+    <div id="enter-container">
+      <p>Já tem possui uma conta?</p>
+      <a href="login2.html">Entrar</a>
+    </div>
+  </div>
+</body>
+</html>
